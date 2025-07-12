@@ -1,4 +1,4 @@
-import MainHeader from '@/components/MainHeader';
+import MainHeader from '@/components/main-header';
 import '../globals.css';
 
 export const metadata = {
@@ -6,11 +6,15 @@ export const metadata = {
   description: 'Learn how to route to different pages.',
 };
 
-export default function ContentLayout({ children }) {
+export default function RootLayout({ children }) {
   return (
-    <div id='page'>
-      <MainHeader />
-      {children}
-    </div>
+    <html lang="en">
+      <body>
+        <div id="page">
+          <MainHeader />
+          {children}
+        </div>
+      </body>
+    </html>
   );
 }
