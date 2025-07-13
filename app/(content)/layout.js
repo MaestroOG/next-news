@@ -1,5 +1,6 @@
 import MainHeader from '@/components/main-header';
 import '../globals.css';
+import ProgressBar from '@/components/progress-bar';
 
 export const metadata = {
   title: 'Next.js Page Routing & Rendering',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <div id="page">
           <MainHeader />
+          <ProgressBar />
           {children}
         </div>
       </body>
